@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Johnny's Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo-link">Portfolio</a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#edu" class="main-nav-link">Education</a></li>
+          <li><a href="#exp" class="main-nav-link">Experience</a></li>
+          <li><a href="#proj" class="main-nav-link">Projects</a></li>
+          <li><a href="#" class="main-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-textbox">
+            <p class="hero-text">Hello, I'm</p>
+            <p class="hero-name">Johnny Chiu</p>
+            <p class="hero-role">Software Development Engineer</p>
+            <div class="logos">
+              <a href="#" class="sm-link">
+                <ion-icon name="logo-linkedin" class="logo-icon"></ion-icon>
+              </a>
+              <a href="#" class="sm-link">
+                <ion-icon name="logo-github" class="logo-icon"></ion-icon>
+              </a>
+              <a href="#" class="sm-link">
+                <ion-icon name="logo-instagram" class="logo-icon"></ion-icon>
+              </a>
+            </div>
+            <div class="hero-btn">
+              <button class="contact-me">Contact me</button>
+              <a href="#" class="learn-more">Learn More &darr;</a>
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="hero-img.png"
+              alt="Picture of Johnny Chiu"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-education" id="edu">
+        <div class="container">
+          <span class="subheader">Education</span>
+        </div>
+        <div class="container">
+          <div class="education-card">
+            <div class="education-card-imgbox">
+              <img
+                src="logos/umd-logo.png"
+                alt="Picture of University of Maryland logo"
+                class="logo-umd"
+              />
+            </div>
+            <div class="education-card-textbox">
+              <h3 class="education-card-title">
+                University of Maryland, College Park
+              </h3>
+
+              <ul class="education-card-list">
+                <li class="education-card-list-item">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <span class="card-list-text"> August 2018 - June 2022 </span>
+                </li>
+                <li class="education-card-list-item">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                  <span class="card-list-text">
+                    Bachelor's of Science in Computer Science
+                  </span>
+                </li>
+                <li class="education-card-list-item">
+                  <ion-icon name="calculator-outline"></ion-icon>
+                  <span class="card-list-text">
+                    Bachelor's of Science in Mathematics
+                  </span>
+                </li>
+                <li class="education-card-list-item">
+                  <ion-icon name="reader-outline"></ion-icon>
+                  <span class="card-list-text"> 3.4 / 4.0 GPA </span>
+                </li>
+                <li class="education-card-list-item">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                  <span class="card-list-text">
+                    College Park Scholars Certification in ETE Program
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container"></div>
+      </section>
+      <section class="section-experience" id="exp">
+        <div class="container">
+          <span class="subheader">Experience</span>
+        </div>
+        <div class="carousel">
+          <div class="cover--left"></div>
+
+          <div class="container container-carousel">
+            <div class="carousel-exp">
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/amazon-logo.png"
+                    alt="amazon logo"
+                    class="exp-img-amazon"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">Software Dev Engineer</span>
+
+                  <ul class="exp-list">
+                    <li><span>Amazon.com, Inc.</span></li>
+                    <li><span>July 2022 - Jan 2023</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/umd-long-logo.png"
+                    alt="Picture of UMD logo"
+                    class="exp-img-umd"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">Web Developement Intern</span>
+
+                  <ul class="exp-list">
+                    <li><span>University of Maryland</span></li>
+                    <li><span>May 2021 - Aug 2021</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/edlyft-logo.png"
+                    alt="Picture of Edlyft logo"
+                    class="exp-img-umd"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">Computer Science Mentor</span>
+
+                  <ul class="exp-list">
+                    <li><span>Edlyft</span></li>
+                    <li><span>Jun 2021 - Dec 2021</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/tt-logo.png"
+                    alt="Picture of Terrapin Tech logo"
+                    class="exp-img-tt"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">Assistant Lead</span>
+
+                  <ul class="exp-list">
+                    <li><span>Terrapin Tech (UMD)</span></li>
+                    <li><span>May 2021 - Aug 2021</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/recwell-logo.png"
+                    alt="Picture of Recwell logo"
+                    class="exp-img-rec"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">Personal Trainer</span>
+
+                  <ul class="exp-list">
+                    <li><span>Recwell (UMD)</span></li>
+                    <li><span>Jan 2021 - June 2022</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="exp-item">
+                <div class="exp-img">
+                  <img
+                    src="logos/recwell-logo.png"
+                    alt="Picture of Recwell logo"
+                    class="exp-img-rec"
+                  />
+                </div>
+                <div class="exp-content">
+                  <span class="exp-title">WF Supervisor/Staff</span>
+
+                  <ul class="exp-list">
+                    <li><span>Recwell (UMD)</span></li>
+                    <li><span>Jan 2019 - June 2022</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--left">
+              <ion-icon name="chevron-back-outline" class="btn-icon"></ion-icon>
+            </button>
+            <button class="btn btn--right">
+              <ion-icon
+                name="chevron-forward-outline"
+                class="btn-icon"
+              ></ion-icon>
+            </button>
+          </div>
+          <div class="cover--right"></div>
+        </div>
+      </section>
+      <section class="section-projects" id="proj">
+        <div class="container">
+          <span class="subheader">Projects</span>
+        </div>
+        <div class="container grid grid--2-cols"></div>
+      </section>
+    </main>
+  </body>
+</html>
