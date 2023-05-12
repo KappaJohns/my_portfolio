@@ -76,14 +76,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #9ed7e6;
+  background-color: rgba(255, 255, 255, 0.95);
 
   height: 9.6rem;
   padding: 4.8rem 25.6rem;
 
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  z-index: 99; */
+  z-index: 10;
 }
 
 .logo-link:link,
@@ -104,27 +104,45 @@ body {
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  font-weight: 500;
   font-size: 2.4rem;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #333;
 
   cursor: pointer;
 
   transition: all 0.4s ease-in;
-  text-underline-offset: 5px;
+  position: relative;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  text-decoration: underline;
+.main-nav-link:link::before {
+  position: absolute;
+  content: "";
+
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+
+  background: #333;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: right;
+  transform: scaleX(0);
 }
 
+.main-nav-link:link:hover::before {
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
+}
 /* -------------------------- */
 /* HERO */
 /* -------------------------- */
 
 .section-hero {
   /* background-color: #dff1f7; */
+  margin-top: 3.6rem;
   padding: 6.4rem 0 0;
 }
 
@@ -176,6 +194,8 @@ body {
 
 .contact-me:hover {
   cursor: pointer;
+  color: #fff;
+  background-color: #666;
 }
 
 .learn-more--hero {
@@ -324,10 +344,14 @@ body {
   display: grid;
   grid-template-rows: 2fr 3fr;
   overflow: hidden;
+
+  transition: all 0.4s;
 }
 
 .exp-item:hover {
   cursor: pointer;
+  transform: translateY(-1.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.04);
 }
 
 .exp-content {
@@ -706,6 +730,9 @@ section {
   margin-bottom: 6.4rem;
 }
 
+.unselectable {
+}
+
 /* CAROUSEL BUTTONS */
 .btn {
   background-color: #fff;
@@ -720,7 +747,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 99;
+}
+
+.btn:hover {
+  background-color: #eee;
 }
 
 .btn--left {
