@@ -1,0 +1,65 @@
+/* *************************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* *************************** */
+.learn-more:link,
+.learn-more:visited {
+  display: inline-block;
+
+  text-decoration: none;
+
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #555;
+  background-color: #dff1f7;
+}
+
+.learn-more:hover,
+.learn-more:active {
+  background-color: #ceeaf3;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0%;
+  max-height: 0;
+}
+
+.hideup {
+  /* display: none; */
+  /* transition: max-height 0.2s; */
+  max-height: 0;
+  padding: 0;
+  visibility: hidden;
+
+  opacity: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.margin-top-title {
+  margin-top: 2.4rem !important;
+}
+
+section {
+  margin-bottom: 6.4rem;
+}

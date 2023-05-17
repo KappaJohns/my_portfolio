@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
 
     <script
       type="module"
@@ -32,7 +33,7 @@
           <li><a href="#edu" class="main-nav-link">Education</a></li>
           <li><a href="#exp" class="main-nav-link">Experience</a></li>
           <li><a href="#proj" class="main-nav-link">Projects</a></li>
-          <li><a href="#footer" class="main-nav-link">Contact</a></li>
+          <li><button class="nav-contact contact">Contact</button></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +69,7 @@
               </a>
             </div>
             <div class="hero-btn">
-              <button class="contact-me">Contact me</button>
+              <button class="hero-contact-me contact">Contact me</button>
             </div>
           </div>
 
@@ -85,7 +86,7 @@
         <div class="container">
           <span class="subheader">Education</span>
         </div>
-        <div class="container">
+        <div class="container margin-top-title">
           <div class="education-card">
             <div class="card-imgbox">
               <img
@@ -138,109 +139,107 @@
         <div class="carousel">
           <div class="cover--left"></div>
 
-          <div class="container container-carousel">
-            <div class="carousel-exp">
-              <div class="exp-item amzn">
-                <div class="exp-img">
-                  <img
-                    src="logos/amazon-logo.png"
-                    alt="amazon logo"
-                    class="exp-img-amazon"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">Software Dev Engineer</span>
-
-                  <ul class="exp-list">
-                    <li><span>Amazon.com, Inc.</span></li>
-                    <li><span>July 2022 - Jan 2023</span></li>
-                  </ul>
-                </div>
+          <div class="carousel-exp">
+            <div class="exp-item amzn">
+              <div class="exp-img">
+                <img
+                  src="logos/amazon-logo.png"
+                  alt="amazon logo"
+                  class="exp-img-amazon"
+                />
               </div>
-              <div class="exp-item feva">
-                <div class="exp-img">
-                  <img
-                    src="logos/umd-long-logo.png"
-                    alt="Picture of UMD logo"
-                    class="exp-img-umd"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">Web Developement Intern</span>
+              <div class="exp-content">
+                <span class="exp-title">Software Dev Engineer</span>
 
-                  <ul class="exp-list">
-                    <li><span>University of Maryland</span></li>
-                    <li><span>May 2021 - Aug 2021</span></li>
-                  </ul>
-                </div>
+                <ul class="exp-list">
+                  <li><span>Amazon.com, Inc.</span></li>
+                  <li><span>July 2022 - Jan 2023</span></li>
+                </ul>
               </div>
-              <div class="exp-item edlyft">
-                <div class="exp-img">
-                  <img
-                    src="logos/edlyft-logo.png"
-                    alt="Picture of Edlyft logo"
-                    class="exp-img-edlyft"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">Computer Science Mentor</span>
-
-                  <ul class="exp-list">
-                    <li><span>Edlyft</span></li>
-                    <li><span>Jun 2021 - Dec 2021</span></li>
-                  </ul>
-                </div>
+            </div>
+            <div class="exp-item feva">
+              <div class="exp-img">
+                <img
+                  src="logos/umd-long-logo.png"
+                  alt="Picture of UMD logo"
+                  class="exp-img-umd"
+                />
               </div>
-              <div class="exp-item tt">
-                <div class="exp-img">
-                  <img
-                    src="logos/tt-logo.png"
-                    alt="Picture of Terrapin Tech logo"
-                    class="exp-img-tt"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">Assistant Lead</span>
+              <div class="exp-content">
+                <span class="exp-title">Web Developement Intern</span>
 
-                  <ul class="exp-list">
-                    <li><span>Terrapin Tech (UMD)</span></li>
-                    <li><span>Jun 2021 - Jun 2022</span></li>
-                  </ul>
-                </div>
+                <ul class="exp-list">
+                  <li><span>University of Maryland</span></li>
+                  <li><span>May 2021 - Aug 2021</span></li>
+                </ul>
               </div>
-              <div class="exp-item rec1">
-                <div class="exp-img">
-                  <img
-                    src="logos/recwell-logo.png"
-                    alt="Picture of Recwell logo"
-                    class="exp-img-rec"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">Personal Trainer</span>
-
-                  <ul class="exp-list">
-                    <li><span>Recwell (UMD)</span></li>
-                    <li><span>Jan 2021 - June 2022</span></li>
-                  </ul>
-                </div>
+            </div>
+            <div class="exp-item edlyft">
+              <div class="exp-img">
+                <img
+                  src="logos/edlyft-logo.png"
+                  alt="Picture of Edlyft logo"
+                  class="exp-img-edlyft"
+                />
               </div>
-              <div class="exp-item rec2">
-                <div class="exp-img">
-                  <img
-                    src="logos/recwell-logo.png"
-                    alt="Picture of Recwell logo"
-                    class="exp-img-rec"
-                  />
-                </div>
-                <div class="exp-content">
-                  <span class="exp-title">WF Supervisor/Staff</span>
+              <div class="exp-content">
+                <span class="exp-title">Computer Science Mentor</span>
 
-                  <ul class="exp-list">
-                    <li><span>Recwell (UMD)</span></li>
-                    <li><span>Jan 2019 - June 2022</span></li>
-                  </ul>
-                </div>
+                <ul class="exp-list">
+                  <li><span>Edlyft</span></li>
+                  <li><span>Jun 2021 - Dec 2021</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp-item tt">
+              <div class="exp-img">
+                <img
+                  src="logos/tt-logo.png"
+                  alt="Picture of Terrapin Tech logo"
+                  class="exp-img-tt"
+                />
+              </div>
+              <div class="exp-content">
+                <span class="exp-title">Assistant Lead</span>
+
+                <ul class="exp-list">
+                  <li><span>Terrapin Tech (UMD)</span></li>
+                  <li><span>Jun 2021 - Jun 2022</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp-item rec1">
+              <div class="exp-img">
+                <img
+                  src="logos/recwell-logo.png"
+                  alt="Picture of Recwell logo"
+                  class="exp-img-rec"
+                />
+              </div>
+              <div class="exp-content">
+                <span class="exp-title">Personal Trainer</span>
+
+                <ul class="exp-list">
+                  <li><span>Recwell (UMD)</span></li>
+                  <li><span>Jan 2021 - June 2022</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="exp-item rec2">
+              <div class="exp-img">
+                <img
+                  src="logos/recwell-logo.png"
+                  alt="Picture of Recwell logo"
+                  class="exp-img-rec"
+                />
+              </div>
+              <div class="exp-content">
+                <span class="exp-title">WF Supervisor/Staff</span>
+
+                <ul class="exp-list">
+                  <li><span>Recwell (UMD)</span></li>
+                  <li><span>Jan 2019 - June 2022</span></li>
+                </ul>
               </div>
             </div>
             <button class="btn btn--left">
@@ -256,7 +255,7 @@
 
           <div class="cover--right"></div>
         </div>
-        <div>
+        <div class="box-parent">
           <div class="content-amzn exp-box hideup">
             <div class="exp-card-imgbox">
               <img
@@ -506,11 +505,10 @@
 
     <section class="contact-box hidden">
       <div class="contact-box--background">
-        <div class="contact-background"></div>
         <div class="contact-content">
           <span class="contact-title">Contact Me</span>
 
-          <form name="contact-form" method="POST">
+          <form name="contact-form" method="POST" id="contact">
             <div class="form-name">
               <label for="name">Name:</label>
               <input
@@ -552,7 +550,9 @@
       </div>
     </section>
 
-    <footer></footer>
+    <!-- <footer class="footer" id="footer">
+      <div class="container"></div>
+    </footer> -->
 
     <script src="script.js"></script>
   </body>
