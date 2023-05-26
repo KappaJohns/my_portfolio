@@ -34,9 +34,9 @@
       <a href="#" class="logo-link">Portfolio</a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#edu" class="main-nav-link">Education</a></li>
-          <li><a href="#exp" class="main-nav-link">Experience</a></li>
-          <li><a href="#proj" class="main-nav-link">Projects</a></li>
+          <li><a href="#edu" class="main-nav-link link--edu">Education</a></li>
+          <li><a href="#exp" class="main-nav-link link--exp">Experience</a></li>
+          <li><a href="#proj" class="main-nav-link link--proj">Projects</a></li>
           <li><button class="nav-contact contact">Contact</button></li>
         </ul>
       </nav>
@@ -529,9 +529,10 @@
               <label for="name">Name:</label>
               <input
                 type="text"
-                name="name"
+                id="name"
                 class="name"
                 placeholder="John Smith"
+                autocomplete="on"
                 required
               />
             </div>
@@ -539,16 +540,17 @@
               <label for="email">Email:</label>
               <input
                 type="email"
-                name="email"
+                id="email"
                 class="email"
                 placeholder="example@gmail.com"
+                autocomplete="on"
                 required
               />
             </div>
             <div class="form-msg">
               <label for="msg">Message:</label>
               <textarea
-                name="msg"
+                id="msg"
                 rows="10"
                 class="msg-box"
                 placeholder="What's on your mind?"
