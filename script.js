@@ -10,6 +10,9 @@ const contactBackground = document.querySelector('.contact-box--background');
 const formClose = document.querySelector('.contact-close');
 const formEle = document.getElementById('contact');
 
+const allLinks = document.querySelectorAll('a:link');
+const headerEle = document.querySelector('.header');
+
 // TODO
 // will need to set initGap dynamically
 const initGap = 48;
@@ -19,6 +22,33 @@ let currVisibleBox = undefined;
 
 const closeForm = () => contactBox.classList.add('hidden');
 
+allLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+
+    // Scroll back to top
+    if (href === '#')
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+
+    // Scroll to other links
+    if (href !== '#' && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href);
+      const sectionElCoords = sectionEl.getBoundingClientRect();
+      window.scrollTo({
+        left: sectionElCoords.left + window.scrollX,
+        top:
+          sectionElCoords.top +
+          window.scrollY -
+          headerEle.getBoundingClientRect().height,
+        behavior: 'smooth',
+      });
+    }
+  });
+});
 // closing the form
 formEle.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -89,8 +119,4 @@ function createExpHoverStyle(item, pos) {
   const style = document.createElement('style');
   style.appendChild(document.createTextNode(css));
   // style.styleSheets.cssText = css;
-
-  console.log();
 }
-
-console.log(document.styleSheets);
