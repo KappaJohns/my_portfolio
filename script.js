@@ -37,15 +37,7 @@ allLinks.forEach(function (link) {
     // Scroll to other links
     if (href !== '#' && href.startsWith('#')) {
       const sectionEl = document.querySelector(href);
-      const sectionElCoords = sectionEl.getBoundingClientRect();
-      window.scrollTo({
-        left: sectionElCoords.left + window.scrollX,
-        top:
-          sectionElCoords.top +
-          window.scrollY -
-          headerEle.getBoundingClientRect().height,
-        behavior: 'smooth',
-      });
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
