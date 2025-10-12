@@ -17,5 +17,5 @@
     // 👇 ADD THIS LINE
     "jsx": "react-jsx"
   },
-  "include": ["src/*"]
+  "include": ["src/*", "logos/*"]
 }
