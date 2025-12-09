@@ -11,10 +11,11 @@ import classes from './Navigation.module.css';
 // }
 
 const links = [
-  { link: '/about', label: 'Features' },
+  { link: '/background', label: 'Background' },
+  { link: '/experience', label: 'Experience' },
   {
     link: '#1',
-    label: 'Learn',
+    label: 'Projects',
     links: [
       { link: '/docs', label: 'Documentation' },
       { link: '/resources', label: 'Resources' },
@@ -22,7 +23,6 @@ const links = [
       { link: '/blog', label: 'Blog' },
     ],
   },
-  { link: '/about', label: 'About' },
   { link: '/pricing', label: 'Pricing' },
   {
     link: '#2',
